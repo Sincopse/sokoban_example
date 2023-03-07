@@ -71,9 +71,9 @@ namespace Sokoban
 
             level = new char[nColumns, nRows];
 
-            for (int i = 0; i < nRows; i++)
+            for (int i = 0; i < nColumns; i++)
             {
-                for (int j = 0; j < nColumns; j++)
+                for (int j = 0; j < nRows; j++)
                 {
                     level[i,j] = rows[j][i];
                 }
