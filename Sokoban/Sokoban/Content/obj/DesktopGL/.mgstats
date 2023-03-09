@@ -1,0 +1,6 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"D:/IPCA/TDJ/sokoban_example/Sokoban/Sokoban/Content/Character4.png","D:/IPCA/TDJ/sokoban_example/Sokoban/Sokoban/Content/bin/DesktopGL/Character4.xnb","TextureProcessor","Texture2DContent",1668,8817,0.1556959
+"D:/IPCA/TDJ/sokoban_example/Sokoban/Sokoban/Content/Crate_Brown.png","D:/IPCA/TDJ/sokoban_example/Sokoban/Sokoban/Content/bin/DesktopGL/Crate_Brown.xnb","TextureProcessor","Texture2DContent",1064,16469,0.0034137
+"D:/IPCA/TDJ/sokoban_example/Sokoban/Sokoban/Content/EndPoint_Blue.png","D:/IPCA/TDJ/sokoban_example/Sokoban/Sokoban/Content/bin/DesktopGL/EndPoint_Blue.xnb","TextureProcessor","Texture2DContent",592,4181,0.144256
+"D:/IPCA/TDJ/sokoban_example/Sokoban/Sokoban/Content/font.spritefont","D:/IPCA/TDJ/sokoban_example/Sokoban/Sokoban/Content/bin/DesktopGL/font.xnb","FontDescriptionProcessor","SpriteFontContent",2071,21535,0.109477
+"D:/IPCA/TDJ/sokoban_example/Sokoban/Sokoban/Content/Wall_Brown.png","D:/IPCA/TDJ/sokoban_example/Sokoban/Sokoban/Content/bin/DesktopGL/Wall_Brown.xnb","TextureProcessor","Texture2DContent",1493,16469,0.0024263

@@ -9,10 +9,14 @@ namespace Sokoban
     {
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
-        private SpriteFont font;
         private int nRows = 0;
         private int nColumns = 0;
         private char[,] level;
+
+        private Texture2D player, dot, box, wall;
+        private SpriteFont font;
+
+        int tileSize = 64;
 
         public Game1()
         {
@@ -34,6 +38,14 @@ namespace Sokoban
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             font = Content.Load<SpriteFont>("font");
+            player = Content.Load<Texture2D>("Character4");
+            dot = Content.Load<Texture2D>("EndPoint_Blue");
+            box = Content.Load<Texture2D>("Crate_Brown");
+            wall = Content.Load<Texture2D>("Wall_Brown");
+
+            _graphics.PreferredBackBufferHeight = tileSize * level.GetLength(1); //definição da altura
+            _graphics.PreferredBackBufferWidth = tileSize * level.GetLength(0); //definição da largura
+            _graphics.ApplyChanges(); //aplica a atualização da janela
 
             // TODO: use this.Content to load your game content here
         }
@@ -53,9 +65,30 @@ namespace Sokoban
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             _spriteBatch.Begin();
-            _spriteBatch.DrawString(font, "Sample Text", new Vector2(320, 200), Color.Green);
-            _spriteBatch.DrawString(font, $"Numero de Linhas = {nRows} | Numero de Colunas = {nColumns}", new Vector2(10, 10), Color.Black);
-            _spriteBatch.DrawString(font, "dwqwqwe", new Vector2(10, 20), Color.Black);
+            Rectangle position = new Rectangle(0, 0, tileSize, tileSize); //calculo do retangulo a depender do tileSize
+            for (int x = 0; x < level.GetLength(0); x++) //pega a primeira dimensão
+            {
+                for (int y = 0; y < level.GetLength(1); y++) //pega a segunda dimensão
+                {
+                    position.X = x * tileSize; // define o position
+                    position.Y = y * tileSize; // define o position
+                    switch (level[x, y])
+                    {
+                        case 'Y':
+                            _spriteBatch.Draw(player, position, Color.White);
+                            break;
+                        case '#':
+                            _spriteBatch.Draw(box, position, Color.White);
+                            break;
+                        case '.':
+                            _spriteBatch.Draw(dot, position, Color.White);
+                            break;
+                        case 'X':
+                            _spriteBatch.Draw(wall, position, Color.White);
+                            break;
+                    }
+                }
+            }
             _spriteBatch.End();
 
             // TODO: Add your drawing code here
@@ -71,9 +104,9 @@ namespace Sokoban
 
             level = new char[nColumns, nRows];
 
-            for (int i = 0; i < nRows; i++)
+            for (int i = 0; i < nColumns; i++)
             {
-                for (int j = 0; j < nColumns; j++)
+                for (int j = 0; j < nRows; j++)
                 {
                     level[i,j] = rows[j][i];
                 }

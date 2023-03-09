@@ -25,3 +25,7 @@ D:\IPCA\TDJ\sokoban_example\Sokoban\Sokoban\obj\Debug\net6.0\Sokoban.pdb
 D:\IPCA\TDJ\sokoban_example\Sokoban\Sokoban\obj\Debug\net6.0\Sokoban.genruntimeconfig.cache
 D:\IPCA\TDJ\sokoban_example\Sokoban\Sokoban\obj\Debug\net6.0\ref\Sokoban.dll
 D:\IPCA\TDJ\sokoban_example\Sokoban\Sokoban\bin\Debug\net6.0\Content\level1.txt
+D:\IPCA\TDJ\sokoban_example\Sokoban\Sokoban\bin\Debug\net6.0\Content\Character4.xnb
+D:\IPCA\TDJ\sokoban_example\Sokoban\Sokoban\bin\Debug\net6.0\Content\Crate_Brown.xnb
+D:\IPCA\TDJ\sokoban_example\Sokoban\Sokoban\bin\Debug\net6.0\Content\Wall_Brown.xnb
+D:\IPCA\TDJ\sokoban_example\Sokoban\Sokoban\bin\Debug\net6.0\Content\EndPoint_Blue.xnb
