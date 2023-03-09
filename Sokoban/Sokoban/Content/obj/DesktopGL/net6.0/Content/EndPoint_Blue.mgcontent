@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SourceFile>D:/IPCA/TDJ/sokoban_example/Sokoban/Sokoban/Content/EndPoint_Blue.png</SourceFile>
-  <SourceTime>2023-03-02T16:37:38.4315302+00:00</SourceTime>
+  <SourceTime>2023-03-09T20:20:40.8837263+00:00</SourceTime>
   <DestFile>D:/IPCA/TDJ/sokoban_example/Sokoban/Sokoban/Content/bin/DesktopGL/Content/EndPoint_Blue.xnb</DestFile>
-  <DestTime>2023-03-09T16:20:34.7898718+00:00</DestTime>
+  <DestTime>2023-03-09T20:24:43.3524203+00:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T12:44:56+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

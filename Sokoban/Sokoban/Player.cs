@@ -13,9 +13,13 @@ namespace Sokoban
         private Point position; //Point = Vector2, mas são inteiros
         public Point Position => position; //auto função (equivalente a ter só get sem put)
 
-        public Player(int x, int y) //constructor que dada a as +osições guarda a sua posição
+        public Player(int x, int y) //constructor que dada as posições guarda a sua posição
         {
             position = new Point(x, y);
+        }
+        public Player() //constructor que dada as posições guarda a sua posição
+        {
+            position = new Point();
         }
     }
 }

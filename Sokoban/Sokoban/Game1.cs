@@ -16,6 +16,8 @@ namespace Sokoban
         private Texture2D player, dot, box, wall;
         private SpriteFont font;
 
+        private Player sokoban;
+
         int tileSize = 64;
 
         public Game1()
@@ -62,7 +64,7 @@ namespace Sokoban
 
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.CornflowerBlue); 
 
             _spriteBatch.Begin();
             Rectangle position = new Rectangle(0, 0, tileSize, tileSize); //calculo do retangulo a depender do tileSize
@@ -74,9 +76,9 @@ namespace Sokoban
                     position.Y = y * tileSize; // define o position
                     switch (level[x, y])
                     {
-                        case 'Y':
-                            _spriteBatch.Draw(player, position, Color.White);
-                            break;
+                        //case 'Y':
+                        //    _spriteBatch.Draw(player, position, Color.White);
+                        //    break;
                         case '#':
                             _spriteBatch.Draw(box, position, Color.White);
                             break;
@@ -89,6 +91,11 @@ namespace Sokoban
                     }
                 }
             }
+
+            position.X = sokoban.Position.X * tileSize; //posição do Player
+            position.Y = sokoban.Position.Y * tileSize; //posição do Player
+            _spriteBatch.Draw(player, position, Color.White); //desenha o Player
+
             _spriteBatch.End();
 
             // TODO: Add your drawing code here
@@ -104,11 +111,19 @@ namespace Sokoban
 
             level = new char[nColumns, nRows];
 
-            for (int i = 0; i < nColumns; i++)
+            for (int x = 0; x < nColumns; x++)
             {
-                for (int j = 0; j < nRows; j++)
+                for (int y = 0; y < nRows; y++)
                 {
-                    level[i,j] = rows[j][i];
+                    if (rows[y][x] == 'Y')
+                    {
+                        sokoban = new Player(x, y);
+                        level[x, y] = ' '; // put a blank instead of the sokoban 'Y'
+                    }
+                    else
+                    {
+                        level[x, y] = rows[y][x];
+                    }
                 }
             }
         }
