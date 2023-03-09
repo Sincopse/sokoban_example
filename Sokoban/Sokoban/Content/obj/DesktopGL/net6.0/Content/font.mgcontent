@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SourceFile>D:/IPCA/TDJ/sokoban_example/Sokoban/Sokoban/Content/font.spritefont</SourceFile>
-  <SourceTime>2023-03-07T16:26:20.7334086+00:00</SourceTime>
+  <SourceTime>2023-03-07T20:10:20.5840524+00:00</SourceTime>
   <DestFile>D:/IPCA/TDJ/sokoban_example/Sokoban/Sokoban/Content/bin/DesktopGL/Content/font.xnb</DestFile>
-  <DestTime>2023-03-07T16:26:21.8113341+00:00</DestTime>
+  <DestTime>2023-03-07T20:12:12.2498928+00:00</DestTime>
   <Importer>FontDescriptionImporter</Importer>
   <ImporterTime>2022-07-26T12:44:56+01:00</ImporterTime>
   <Processor>FontDescriptionProcessor</Processor>
